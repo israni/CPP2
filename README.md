@@ -3,8 +3,15 @@ This repository will be used to save C++ code written by me that cover basic con
 
 # Folder Structure  
 
-# Software Requirements
+# Software\Build Requirements 
+## Windows
 - Visual Studio Code (recommended)
+- MinGW compiler for C/C++
+- Install C/C++ plugin for VScode.
+- `Terminal -> Configure Default Build Task`
+- `Terminal -> Run Build Task`
+
+## Linux
 
 # License
 `MIT License`
