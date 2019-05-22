@@ -11,6 +11,9 @@ This repository will be used to save C++ code written by me that cover basic con
 - `Terminal -> Configure Default Build Task`
 - `Terminal -> Run Build Task`
 
+With the src, bin directory folder structure, change the tasks.json file created after step 4.
+Use this `"${fileDirname}\\..\\bin\\${fileBasenameNoExtension}.exe"`
+
 ## Linux
 
 # License
