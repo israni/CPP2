@@ -9,11 +9,11 @@ int main()
     cout << "3. For loop" << endl;
     cout << "4. While" << endl;
     cout << "5. Do While" << endl;
-    cout << endl;
     
-
     // If/else
-    cout << "If/else: ";
+    cout << endl << "If/else: ";
+    cout << "Checks condition, executes moves forward. " << endl;
+
     int a = 10;
     if (a < 20)
     {
@@ -25,7 +25,9 @@ int main()
     }
     
     // Switch case
-    cout << "Switch case: ";
+    cout << endl << "Switch case: ";
+    cout << "Helps you avoid using multiple if else logics and write cleaner code. " << endl;
+
     int age = 25;
     switch (age)
     {
@@ -42,8 +44,36 @@ int main()
             cout << "Age is not one of the required ages." << endl;
     }
 
+    // For loop
+    cout << endl << "For loop: " << endl;
+    cout << "Executes code block for a given number of times. " << endl;
 
+    for (int i=0; i < 5; i++)
+    {
+        cout << i << endl;
+    }
 
+    // While loop
+    cout << endl << "While loop: " << endl;
+    cout << "Executes code block until condition is satisified. " << endl;
+    int x = 0;
+    while(x<5)
+    {
+        cout << x << endl;
+        x++;
+    }
+
+    // Do While
+    cout << endl << "Do While loop: " << endl;
+    cout << "Will execute atleast once. " << endl;
+    cout << "Checks condition in the end. " << endl;
+
+    int y = 0;
+    do 
+    {
+        cout << y << endl;
+        y++;
+    }while(y<5);
 
     return(0);
 }
