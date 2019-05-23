@@ -2,7 +2,11 @@
 This repository will be used to save C++ code written by me that cover basic concepts as well as interview practice questions.
 
 # Folder Structure  
-
+```
+├───.vscode   Contains settings for VScode to build each file.
+├───bin       Contains all executable files
+└───src       Contains source files (.cpp)
+```
 # Software\Build Requirements 
 ## Windows
 - Visual Studio Code (recommended)
