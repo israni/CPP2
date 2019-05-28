@@ -19,6 +19,8 @@ int main()
     {
         cout << "\t" << my_array[i] << " ";
     }
+    // If size of array is unknown, it can be found using -
+    cout << endl << "   size of array is: " << sizeof(my_array)/sizeof(my_array[0]);
 
     // Print all elements of the declared and initialized array with size specified
     cout << endl << endl << "2. my_array_2[5] = {1,2,3,4,5}" << endl;
