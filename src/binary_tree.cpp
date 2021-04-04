@@ -12,6 +12,6 @@ int main()
     else{
         std::cout << "NOT EQUAL" << std::endl;    
     }
-    // std::cout << mynode1 == mynode2 << std::endl;
+    std::cout << mynode1 << std::endl;
     std::cout << "Done" << std::endl;
 }

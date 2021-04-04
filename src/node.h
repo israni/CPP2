@@ -1,3 +1,5 @@
+#include <iostream>
+
 class node{
     private:
         int data;
@@ -8,7 +10,14 @@ class node{
         int get_data(); 
         void set_data(int val); 
         bool operator==(const node& other_node);  
+        friend std::ostream& operator<<(std::ostream& os, const node& n);
 };
+
+std::ostream& operator<<(std::ostream& os, const node& n)
+{
+    os << n.data;
+    return os;
+}
 
 node::node(int val){
     data = val;
