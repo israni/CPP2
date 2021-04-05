@@ -1,45 +1,52 @@
 #include <iostream>
 
+template <class T>
 class node{
     private:
-        int data;
+        T data;
         node* left; // Pointer to left node
         node* right; // Pointer to right node
     public:
         // node();
-        node(int val);
+        node<T>(T val);
         // ~node();
-        int get_data(); 
-        void set_data(int val); 
+        T get_data(); 
+        void set_data(T val); 
         bool operator==(const node& other_node); 
-        // Friend functions are not member functions but can access the private and public members of the class. 
-        friend std::ostream& operator<<(std::ostream& os, const node& n);
+        // Friend functions are not member functions but can access the private and public members of the class.
+        template <typename U> 
+        friend std::ostream& operator<<(std::ostream& os, const node<U>& n);
 };
 
 // Constructor for node class
-node::node(int val){
+template <class T>
+node<T>::node(T val){
     data = val;
     left = nullptr;
     right = nullptr;
 }
 
 // Getter function
-int node::get_data(){
+template <class T>
+T node<T>::get_data(){
     return(data);
 }
 
 // Setter function
-void node::set_data(int val){
+template <class T>
+void node<T>::set_data(T val){
     data = val;
 }
 
 // Overloaded comparison operator to compare two nodes
-bool node::operator==(const node &other_node){
+template <class T>
+bool node<T>::operator==(const node<T> &other_node){
     return other_node.data == data;
 }
 
 // Overloaded print operator to print the value of node to ostream
-std::ostream& operator<<(std::ostream& os, const node& n)
+template <class T>
+std::ostream& operator<<(std::ostream& os, const node<T>& n)
 {
     os << n.data;
     return os;
